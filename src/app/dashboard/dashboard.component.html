@@ -1,0 +1,3 @@
+<div *ngIf="movies$ | async as movies" class="movies__wrapper">
+    <app-movie-card *ngFor="let movie of movies.results" [movie]="movie"></app-movie-card>
+</div>

@@ -1,0 +1,18 @@
+:host {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    mat-card {
+        padding: 80px;
+        // background-color: $primary;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    
+}

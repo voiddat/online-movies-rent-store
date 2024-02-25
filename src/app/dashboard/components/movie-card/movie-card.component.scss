@@ -1,0 +1,13 @@
+:host,
+mat-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+mat-card {
+    padding: 16px;
+    background-color: rgba(61, 143, 238, 0.6);
+    -webkit-box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 55%);
+}
