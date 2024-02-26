@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
+## Potential improvements
+
+* increase unit test coverage
+* add e2e tests
+* add state management ex. ngRx, to reduce API calls thus improving UX and implement well-know FLUX architecture
+* add theme / better look and feel
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
