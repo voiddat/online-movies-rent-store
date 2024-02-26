@@ -1,1 +1,9 @@
-<p>movie-details works!</p>
+<div *ngIf="movie$ | async as movie" class="movie-details__wrapper">
+    <img ngSrc="{{movie.poster_url}}" width="200" height="300">
+    <div class="movie-details__description"><span>{{movie.description}}</span>
+        <div><button mat-button (click)="onRentThisMovieClick(movie.uuid)">Rent this movie</button></div>
+    </div>
+    <div class="movie-details__rating">
+        <div class="five-pointed-star"></div>
+        <span>{{movie.rating}}</span>
+    </div>

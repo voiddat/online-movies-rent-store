@@ -1,14 +1,15 @@
 <div class="app__wrapper">
     <h1>Online Movies Rent Store</h1>
-    <nav mat-tab-nav-bar>
+    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
         <a mat-tab-link
-           *ngFor="let link of navLinks"
+           *ngFor="let link of navLinks$ | async"
            [routerLink]="link.path"
            routerLinkActive #rla="routerLinkActive"
            [active]="rla.isActive">
           {{link.label}}
         </a>
       </nav>
-      
-      <router-outlet></router-outlet>
+      <mat-tab-nav-panel #tabPanel>
+        <router-outlet></router-outlet>
+      </mat-tab-nav-panel>
 </div>

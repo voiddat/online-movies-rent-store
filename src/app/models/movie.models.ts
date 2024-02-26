@@ -14,3 +14,16 @@ export interface Movie {
     description: string;
     poster_url: string;
 }
+
+export interface MovieCategory {
+    name: string;
+}
+
+export interface NewMovie {
+    title: string;
+    pub_date: number;
+    duration: number;
+    rating: number;
+    description: string;
+    categories: string[]
+  }

@@ -1,0 +1,6 @@
+<div id="chart"></div>
+<ng-container *ngIf="movies$ | async as movies">
+    <mat-paginator [length]="movies.count" (page)="onPageChange($event)" [pageIndex]="page" [pageSize]="pageSize"
+[pageSizeOptions]="[1, 2, 5, 10, 25, 100]">
+</mat-paginator>
+</ng-container>

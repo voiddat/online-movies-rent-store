@@ -3,7 +3,12 @@
 @include mat.core();
 
 .app__wrapper {
+    height: max(100%, 100vh);
     padding: 16px;
     background: rgb(150,179,177);
     background: linear-gradient(17deg, rgba(150,179,177,1) 0%, rgba(178,198,236,1) 100%);
+}
+
+nav {
+    padding: 16px;
 }

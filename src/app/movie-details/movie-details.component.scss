@@ -1,0 +1,16 @@
+.movie-details__wrapper {
+    padding: 15px;
+    background: rgb(33, 159, 151);
+    background: linear-gradient(17deg, rgba(33, 159, 151, 1) 0%, rgb(214, 207, 255) 100%);
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.movie-details__rating {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

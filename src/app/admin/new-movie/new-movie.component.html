@@ -1,0 +1,26 @@
+<h2>Add new movie</h2>
+<form>
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input required name="title" [(ngModel)]="model.title" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Publication date</mat-label>
+        <input required name="pub_date" [(ngModel)]="model.pub_date" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Description</mat-label>"
+        <input required name="description" [(ngModel)]="model.description" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Rating</mat-label>
+        <input required name="rating" [(ngModel)]="model.rating" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Categories</mat-label>
+        <mat-select name="categories" multiple [(ngModel)]="model.categories">
+            <mat-option *ngFor="let category of categories$ | async" [value]="category.name">{{category.name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button (click)="onSubmit()">Submit</button>
+</form>
