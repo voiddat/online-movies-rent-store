@@ -8,6 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * add e2e tests
 * add state management ex. ngRx, to reduce API calls thus improving UX and implement well-know FLUX architecture
 * add theme / better look and feel
+* store secrets in a more appropriate way - HTTPOnly cookie set by server to prevent stealing with XSS
 
 ## Development server
 
